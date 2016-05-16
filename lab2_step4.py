@@ -1,11 +1,9 @@
 import json
 import requests
 
-myToken="Bearer TOKEN"
-myRoom="ROOM"
-myRoomName="Aman API Test"
-myEmail="EMAIL"
-myMessage="Test API Message"
+myToken="Bearer YOUR TOKEN"
+myRoom="YOUR ROOM"
+myEmail="YOUR EMAIL"
 
 def post_membership(mytoken,roomid,email,Moderator=False):
    # The header is send to authenticate

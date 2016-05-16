@@ -2,11 +2,7 @@ import json
 import requests
 
 
-myToken="Bearer TOKEN"
-myRoom="ROOM"
-myRoomName="Aman API Test"
-myEmail="EMAIL"
-myMessage="Test API Message"
+myToken="Bearer YOUR TOKEN"
 
 
 def get_rooms(mytoken):

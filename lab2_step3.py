@@ -1,11 +1,9 @@
 import json
 import requests
 
-myToken="Bearer TOKEN"
-myRoom="ROOM"
-myRoomName="Aman API Test"
-myEmail="EMAIL"
-myMessage="Test API Message"
+myToken="Bearer YOUR TOKEN"
+myRoomName="YOUR ROOM NAME"
+
 
 
 def post_createroom(mytoken,roomname):

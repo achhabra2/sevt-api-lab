@@ -3,12 +3,12 @@ import requests
 import openpyxl
 import re
 
-myToken="Bearer TOKEN"
-myRoom="ROOM"
+myToken="Bearer YOUR TOKEN"
+myRoom="YOUR ROOM"
 myWorkbook = "attendee.xlsx"
-mySheetStartCol = 3   
-mySheetStartRow = 4   
-TestOnly = "yes"      
+mySheetStartCol = 3
+mySheetStartRow = 4
+TestOnly = "yes"
 
 
 def post_membership(mytoken,roomid,email,Moderator=False):
@@ -23,7 +23,7 @@ def post_membership(mytoken,roomid,email,Moderator=False):
    #    status ‘200’ means ‘succesful’.
    return str(result.status_code)
 
-   
+
 ListToAdd = list()
 ListSuccess = list()
 ListFailed = list()
@@ -41,7 +41,7 @@ print ("highest row:", mysheethighestrow)
 # the range start-row to last-row, if that contains 200 cells,
 # 'i' will go from 1 to 200
 for i in range(mySheetStartRow, mysheethighestrow, 1):
-    # Put the cell value in row=i in variable "EmailFound" 
+    # Put the cell value in row=i in variable "EmailFound"
     EmailFound = sheet.cell(row=i, column=mySheetStartCol).value
     # Check if the result is an email address ('@' followed by a '.')
     if not re.match(r"[^@]+@[^@]+\.[^@]+", EmailFound):
